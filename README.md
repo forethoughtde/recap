@@ -1,71 +1,68 @@
-# Recap 1
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-The goals of this exercise is to create a photo application with React and consolidate some of the foundational concepts you've seen so far. 
+## Available Scripts
 
+In the project directory, you can run:
 
-## Exercise
+### `yarn start`
 
-- [ ] Choose your photo-like api:
-  - [http://jsonplaceholder.typicode.com/](http://jsonplaceholder.typicode.com/)
-  - [Rick & Morty](https://rickandmortyapi.com/)
-- [ ] Create your app using `create-react-app`. Follow this [link](https://github.com/facebook/create-react-app#quick-overview) to learn how to get started with `create-react-app` if you haven't used it before. You'll need to follow the instructions from the link and execute 3 commands to create your app.
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-If you use http://jsonplaceholder.typicode.com:
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
 
-- [ ] There should be a page that displays a list of photos in the following path `/photos`. You can fetch the photos from this endpoint http://jsonplaceholder.typicode.com/photos?_limit=30
-- [ ] There should be a page that displays a single photo in the following path `/photos/:id`. Endpoint example http://jsonplaceholder.typicode.com/photos/12.  You have more info about the API on its [docs](http://jsonplaceholder.typicode.com/)
-- [ ] When the user clicks on a photo in `/photos` the app should take the user to `/photos/:id`
+### `yarn test`
 
-Else if you use https://rickandmortyapi.com/:
+Launches the test runner in the interactive watch mode.<br />
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-- [ ] There should be a page that displays a list of characters in the following path `/characters`. You can fetch the photos from this endpoint https://rickandmortyapi.com/api/character/
+### `yarn build`
 
-- [ ] There should be a page that displays a single character in the following path `/characters/:id`. Endpoint example https://rickandmortyapi.com/api/character/2. You have more info about the API on its [docs](https://rickandmortyapi.com/documentation/#rest).
+Builds the app for production to the `build` folder.<br />
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-- [ ] When the user clicks on a character in `/characters` the app should take the user to `/characters/:id`
+The build is minified and the filenames include the hashes.<br />
+Your app is ready to be deployed!
 
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### Additional requirements
-- If you reload the detail page, example `/characters/1` or `/photos/1`, it should display the page with the data.
+### `yarn eject`
 
-### Notes
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-This is not a master detail page. It's more simple than the Messenger app.
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-To fetch photos use [http://jsonplaceholder.typicode.com/photos?\_limit=30](http://jsonplaceholder.typicode.com/photos?_limit=30).
-Don't forget the `_limit=30` parameter at the end of the query or it will be slow.
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-To fetch a single photo use [http://jsonplaceholder.typicode.com/photos/<PHOTO_ID>](http://jsonplaceholder.typicode.com/photos/3)
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-Use `react-router` for the routing:
+## Learn More
 
-```
-npm install --save react-router-dom
-```
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-## Core learning objectives to be consolidated 
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-- React composition model
-- Data fetching
-- Declarative Routing
+### Code Splitting
 
-## Bonus
+This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
 
-- [ ] Create your own `Link` component that composes with the `Link` component from "react-router-dom". Your `Link` component will add two props: 1) `rel="nofollow noopener"` and 2) `target="_blank"` to the react-router-dom `Link` if the link points `to` an external link. You can use the following snippet to determine if the `to` prop is an external link: 
+### Analyzing the Bundle Size
 
-```
-if (props.to && props.to.match(/^(https:\/\/*|http:\/\/*|mailto:*)/)) {
- // it's an external link
-}
-```
-- [ ] Add some style with [https://react-bootstrap.github.io/](https://react-bootstrap.github.io/) or [http://material-ui.com/](http://material-ui.com/)
-- [ ] Using this endpoint [http://jsonplaceholder.typicode.com/posts](http://jsonplaceholder.typicode.com/posts), create a page that displays a list of posts in the following path: [http://localhost:3000/posts](http://localhost:3000/posts)
-- [ ] Add a form at the top of the page to add a new post. This url [http://jsonplaceholder.typicode.com/posts](http://jsonplaceholder.typicode.com/posts) also accepts the verb "POST" to add a new post
-- [ ] If you use the Rick & Morty API, you can add a [filter](https://rickandmortyapi.com/documentation/#filter-characters) of the characters list
-- [ ] You can specify a NOT_FOUND route in the Root of your app. (`<Route component={NotFound} />`)
-- [ ] Deploy to `gh-pages` or [https://www.netlify.com/](https://www.netlify.com/)
+This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
 
-## License
+### Making a Progressive Web App
 
-This material is available for private, non-commercial use under the [GPL version 3](http://www.gnu.org/licenses/gpl-3.0-standalone.html).
+This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
 
+### Advanced Configuration
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+
+### Deployment
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+
+### `yarn build` fails to minify
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
